@@ -26,4 +26,3 @@ while (line := file.read_line()) != '':
 
 print(f'Close file {file_name=}')
 file.close()
-
