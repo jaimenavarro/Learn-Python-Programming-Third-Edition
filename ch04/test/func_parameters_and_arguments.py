@@ -22,7 +22,7 @@ def function_variable_keyword_parameter(**kwargs):
 
 
 print(text_separator)
-function_variable_keyword_parameter(a=1, b=2)
+function_variable_keyword_parameter(a=1, b=2)  # Variable keyword parameters
 
 print(text_separator)
 arguments = dict(a=1, b=2)
