@@ -1,0 +1,7 @@
+api_url: https://gorest.co.in/public/v2/users
+save_dir: /Users/dradecic/Desktop/users_data
+save_file: users.json
+file:
+  path: path/to/users.json
+  folder:
+    #test: test
