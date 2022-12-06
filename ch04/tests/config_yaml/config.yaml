@@ -4,4 +4,12 @@ save_file: users.json
 file:
   path: path/to/users.json
   folder:
-    #test: test
+    test: test
+object:
+  name: jaime
+  email: jaime@gmail.com
+list:
+  - name: jaime
+    email: jaime@gmail.com
+  - name: jaime2
+    email: jaime2@gmail.com
