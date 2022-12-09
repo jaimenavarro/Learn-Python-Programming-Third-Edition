@@ -1,4 +1,4 @@
-# func.attributes.py
+ # func.attributes.py
 def multiplication(a, b=1):
     """Return a multiplied by b. """
     return a * b
