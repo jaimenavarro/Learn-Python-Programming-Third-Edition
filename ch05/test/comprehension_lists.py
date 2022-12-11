@@ -4,10 +4,10 @@ for i in range(10):
     print(i)
 
 print(square)
-
 print(list(map(lambda x: x ** 2, range(10))))
-
 print([n ** 2 for n in range(10)])
+
+print("################################################################################")
 s = (n ** 2 for n in range(10))
 print(type(s))
 print(next(s))
@@ -47,9 +47,9 @@ mx = 10
 result = []
 for i in range(mx):
     for j in range(i, mx):
-        if i > 0 and sqrt(i**2 + j**2).is_integer():
+        if i > 0 and (c := sqrt(i**2 + j**2)).is_integer():
             print(i, j, sqrt(i**2 + j**2))
-            result.append((i, j, sqrt(i**2 + j**2)))
+            result.append((i, j, c))
 
 
 print(result)
@@ -72,5 +72,10 @@ t = (0, 1, 2, 4)
 print(t[:2])
 print(t[0:2] + (1,))
 
+print("################################################################################")
 
+mx = 10
+generator = filter(lambda x: x[2].is_integer(), [(i, j, sqrt(i**2 + j**2)) for i in range(1, mx) for j in range(i, mx)])
+print(list(generator))
 
+print("################################################################################")
